@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+   background-color: #f5f6fa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.app__stats{
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.infoBox {
+  margin: 20px; 
+  padding: 10px; 
+} 
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+ 
+}
+.app_graph{
+  flex-grow: 1; 
+  height:300px
+}
+.app__left{
+  flex: 0.9;
+}
+
+.table{
+  margin-top: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  overflow: scroll;
+  height: 400px;
+  color: #6a5d5d;
+}
+
+.table tr:nth-of-type(odd){
+  background-color: #f3f2f8;
+}
+
+
+@media (max-width: 990px){
+  .app {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .table tr{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table td{
+    padding: 0.5rem;
+
   }
 }
+
+
+
+
